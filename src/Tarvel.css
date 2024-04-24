@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  :root {
+    --primary-color: #aa5dda;
+    --text-dark: #97b9eb;
+    --text-light: #ee080800;
+    --extra-light: #f3f4f6;
+  
+    --max-width: 1500px;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  input::placeholder {
+    color: var;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url("https://wallpaperaccess.com/full/1131198.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h1{
+    color: #f3f4f6;
+  }
+  
+  nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  
+  .nav__logo a {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--extra-light);
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .nav__links .link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--extra-light);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .nav__links .link:hover {
+    color: var(--primary-color);
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem;
+    padding-top: 100px;
+    position: relative;
+  }
+  
+  .container__left,
+  .container__right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .container__left .content {
+    max-width: 400px;
+    display: grid;
+    gap: 6rem;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    line-height: 6rem;
+    color: var(--extra-light);
+    font-weight: 700;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    color: var(--extra-light);
+  }
+  
+  .btns {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .btns button {
+    padding: 0.5rem 2rem;
+    color: var(--extra-light);
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--extra-light);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .container__right {
+    justify-content: flex-end;
+  }
+  
+  form{
+    width: 400px;
+    display: grid;
+    border-radius: 1px;
+    color: var(--extra-light);
+  }
+  
+  form h4 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding: 4rem;
+  }
+  
+  .form__group {
+    display: grid;
+    background-color: transparent;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .form__group input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: var(--extra-light);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--extra-light);
+  }
+  
+  form button {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    color: var(--extra-light);
+    cursor: pointer;
+    margin-right: 5%;
+    margin-left: 6%;
+  }
+  button:hover{
+    background-color: whitesmoke;
+    color: #aa5dda;
+    border-radius: 20px;
+    
+  }
+  .bottom{
+    background-color: #1d002f;
+    color: white;
+    padding-left: 3%;
+  }
+  img{
+    width: 300px;
+  }
+  .places{
+    display: flex;
+    justify-content: space-around;
+  }
+  .image1:hover,.image2:hover,.image3:hover{
+    transform: scale(1.1);
+  }
+  .Quote:hover{
+      transform: scale(1.1);
+  }
+  .nav__logo:hover{
+    transform: scale(1.3);
+  }
